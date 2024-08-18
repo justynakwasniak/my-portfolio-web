@@ -1,0 +1,34 @@
+body {
+  background-color: #ece7e1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.mb-custom {
+  margin-bottom: 120px; /* Ustawienie marginesu dolnego na 80px */
+}
+.btn-custom {
+  background-color: black; /* Czarny kolor tła */
+  color: white; /* Biały kolor tekstu */
+  border-radius: 25px; /* Zaokrąglone rogi */
+  padding: 10px 20px; /* Padding wewnątrz przycisku */
+  border: none; /* Usunięcie domyślnego obramowania */
+  font-size: 16px; /* Rozmiar czcionki */
+  transition: width 0.3s ease-in-out; /* Płynne przejście dla szerokości */
+  display: inline-block;
+  cursor: pointer;
+  width: 150px; /* Początkowa szerokość */
+  text-align: center; /* Wyrównanie tekstu do środka */
+}
+
+.btn-custom:hover {
+  width: 180px; /* Zwiększenie szerokości przy najechaniu myszką */
+}
+.email-link {
+  color: black; /* Ustawia czarny kolor linku */
+  text-decoration: none; /* Usuwa domyślne podkreślenie */
+  transition: text-decoration 0.2s ease-in-out; /* Płynne przejście dla podkreślenia */
+}
+
+.email-link:hover {
+  text-decoration: underline; /* Dodaje podkreślenie po najechaniu */
+}
