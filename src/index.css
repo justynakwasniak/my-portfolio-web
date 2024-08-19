@@ -2,6 +2,9 @@ body {
   background-color: #ece7e1;
   font-family: "Montserrat", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .mb-custom {
   margin-bottom: 120px; /* Ustawienie marginesu dolnego na 80px */
@@ -31,4 +34,21 @@ body {
 
 .email-link:hover {
   text-decoration: underline; /* Dodaje podkreślenie po najechaniu */
+}
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
 }
