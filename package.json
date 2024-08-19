@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://justynakwasnia.github.io/my-portfolio-web",
+  "homepage": "https://justynakwasniak.github.io/my-portfolio-web",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
