@@ -2,28 +2,33 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const form = useRef<HTMLFormElement | null>(null);
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_8ks0mn6", // Podaj swoje Service ID
-        "template_34rzkff", // Podaj swoje Template ID
-        form.current,
-        "-IUGxxQ6NYAB_Ezme" // Podaj swój User ID
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert("Message sent successfully!");
-        },
-        (error) => {
-          console.log(error.text);
-          alert("Failed to send the message, please try again.");
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_8ks0mn6", // Podaj swoje Service ID
+          "template_34rzkff", // Podaj swoje Template ID
+          form.current,
+          "-IUGxxQ6NYAB_Ezme" // Podaj swój User ID
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            alert("Message sent successfully!");
+            form.current?.reset(); // Resetowanie formularza po udanym wysłaniu
+          },
+          (error) => {
+            console.log(error.text);
+            alert("Failed to send the message, please try again.");
+          }
+        );
+    } else {
+      alert("Form not found!");
+    }
   };
 
   return (
@@ -40,8 +45,7 @@ const Contact = () => {
             collaborations.
           </p>
           <p>
-            {" "}
-            <strong> E-mail:&nbsp;&nbsp;</strong>
+            <strong>E-mail:&nbsp;&nbsp;</strong>
             <a href="mailto:jkwasniak193@gmail.com" className="email-link">
               jkwasniak193@gmail.com
             </a>

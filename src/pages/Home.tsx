@@ -1,4 +1,3 @@
-import React from "react";
 import flowerImage from "../images/photo-flower.avif";
 
 const Home = () => {

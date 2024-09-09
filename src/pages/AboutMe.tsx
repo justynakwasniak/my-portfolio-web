@@ -1,4 +1,3 @@
-import React from "react";
 import cvFile from "../assets/Justyna_Resume_iteng.pdf"; // Zakładając, że plik PDF jest w folderze `src/assets`
 
 const AboutMe = () => {
