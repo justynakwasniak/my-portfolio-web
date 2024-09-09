@@ -1,3 +1,6 @@
+import React from "react";
+import cvFile from "../assets/Justyna_Resume_iteng.pdf"; // Zakładając, że plik PDF jest w folderze `src/assets`
+
 const AboutMe = () => {
   return (
     <div className="container">
@@ -6,7 +9,7 @@ const AboutMe = () => {
           <h1 className="mb-3">
             <em>About Me</em>
           </h1>
-          <h4>WHO AM I ?</h4>
+          <h4>WHO AM I?</h4>
           <p>
             Hello! I’m Justyna, a Front-End Developer with a background in
             Journalism and a passion for creating beautiful, functional web
@@ -21,10 +24,10 @@ const AboutMe = () => {
             hospitality sectors, these diverse roles have sharpened my
             problem-solving abilities and attention to detail. I’m excited to
             apply these skills to the tech world, where I specialize in HTML,
-            CSS, JavaScript, TypeScript and React.
+            CSS, JavaScript, TypeScript, and React.
           </p>
+          <h4>INTERESTS</h4>
           <p>
-            <h4>INTERESTS</h4>
             Beyond coding, I’m deeply interested in UX/UI design and committed
             to creating not only visually appealing but also highly functional
             and user-centric websites and applications. Outside of tech, you’ll
@@ -35,10 +38,12 @@ const AboutMe = () => {
           <h4>RESUME</h4>
           <p>
             Curious to learn more about my professional journey and skills?
-            Click the button below to download my CV. It provides a detailed
+            Click the button below to view my CV. It provides a detailed
             overview of my education, experience, and technical skills.
           </p>
-          <button className="btn-custom mb-5">My CV </button>
+          <a href={cvFile} target="_blank" rel="noopener noreferrer">
+            <button className="btn-custom mb-5">View My CV</button>
+          </a>
         </div>
       </div>
     </div>
