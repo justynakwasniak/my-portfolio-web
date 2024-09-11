@@ -1,5 +1,6 @@
 body {
   background-color: #ece7e1;
+  color: #463f3a;
   font-family: "Montserrat", sans-serif;
 }
 html {
@@ -51,4 +52,79 @@ html {
 .fade-exit-active {
   opacity: 0;
   transition: opacity 300ms;
+}
+.navbar {
+  background: linear-gradient(90deg, #ece7e1, #e3d5ca);
+}
+
+.nav-link {
+  color: #463f3a;
+  padding: 10px 15px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #e3d5ca;
+  color: #463f3a;
+}
+.img-fluid {
+  transition: transform 0.3s ease-in-out; /* Dodaj płynne przejście */
+}
+
+.img-fluid:hover {
+  transform: scale(1.05) translateY(-5px); /* Subtelne powiększenie i przesunięcie w górę */
+}
+/* .project-image {
+  height: 200px;
+  width: 400px;
+} */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+}
+
+.project-details {
+  padding: 15px;
+}
+
+.project-details h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.project-details p {
+  font-size: 1rem;
+  color: #463f3a;
+  text-align: center;
+}
+.project-card img:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
 }

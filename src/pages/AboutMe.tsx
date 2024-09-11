@@ -1,9 +1,11 @@
-import cvFile from "../assets/Justyna_Resume_iteng.pdf"; // Zakładając, że plik PDF jest w folderze `src/assets`
+import cvFile from "../assets/Justyna_Resume_iteng.pdf";
+import profilePic from "../images/simple.avif";
 
 const AboutMe = () => {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row align-items-center">
+        {/* Tekst */}
         <div className="col-md-6">
           <h1 className="mb-3">
             <em>About Me</em>
@@ -43,6 +45,15 @@ const AboutMe = () => {
           <a href={cvFile} target="_blank" rel="noopener noreferrer">
             <button className="btn-custom mb-5">View My CV</button>
           </a>
+        </div>
+
+        {/* Zdjęcie */}
+        <div className="col-md-6 text-center">
+          <img
+            src={profilePic}
+            alt="Justyna's Profile"
+            className="img-fluid "
+          />
         </div>
       </div>
     </div>
