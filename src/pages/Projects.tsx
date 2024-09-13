@@ -1,4 +1,4 @@
-import screen1 from "../images/img123.png";
+import screen1 from "../images/logo bs.png";
 import screen2 from "../images/weather icon.png";
 
 const Projects = () => {
