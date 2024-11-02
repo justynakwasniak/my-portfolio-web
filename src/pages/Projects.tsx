@@ -1,5 +1,6 @@
 import screen1 from "../images/logo bs.png";
 import screen2 from "../images/weather icon.png";
+import screen3 from "../images/imgeshop.png";
 
 const Projects = () => {
   return (
@@ -42,6 +43,25 @@ const Projects = () => {
             <h2>Weather Application</h2>
             <p>
               An application providing real-time weather updates and forecasts.
+            </p>
+          </div>
+        </div>
+        <div className="project-card">
+          <a
+            href="https://ecommerce3-dusky.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={screen3}
+              alt="The every day shop"
+              className="project-image"
+            />
+          </a>
+          <div className="project-details">
+            <h2>E-commerce Application</h2>
+            <p>
+              An online store application where various products are available.
             </p>
           </div>
         </div>
