@@ -8,33 +8,33 @@ html {
 }
 
 .mb-custom {
-  margin-bottom: 120px; /* Ustawienie marginesu dolnego na 80px */
+  margin-bottom: 120px;
 }
 .btn-custom {
-  background-color: black; /* Czarny kolor tła */
-  color: white; /* Biały kolor tekstu */
-  border-radius: 25px; /* Zaokrąglone rogi */
-  padding: 10px 20px; /* Padding wewnątrz przycisku */
-  border: none; /* Usunięcie domyślnego obramowania */
-  font-size: 16px; /* Rozmiar czcionki */
-  transition: width 0.3s ease-in-out; /* Płynne przejście dla szerokości */
+  background-color: black;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  transition: width 0.3s ease-in-out;
   display: inline-block;
   cursor: pointer;
-  width: 150px; /* Początkowa szerokość */
-  text-align: center; /* Wyrównanie tekstu do środka */
+  width: 150px;
+  text-align: center;
 }
 
 .btn-custom:hover {
-  width: 180px; /* Zwiększenie szerokości przy najechaniu myszką */
+  width: 180px;
 }
 .email-link {
-  color: black; /* Ustawia czarny kolor linku */
-  text-decoration: none; /* Usuwa domyślne podkreślenie */
-  transition: text-decoration 0.2s ease-in-out; /* Płynne przejście dla podkreślenia */
+  color: black;
+  text-decoration: none;
+  transition: text-decoration 0.2s ease-in-out;
 }
 
 .email-link:hover {
-  text-decoration: underline; /* Dodaje podkreślenie po najechaniu */
+  text-decoration: underline;
 }
 .fade-enter {
   opacity: 0;
@@ -69,16 +69,13 @@ html {
   color: #463f3a;
 }
 .img-fluid {
-  transition: transform 0.3s ease-in-out; /* Dodaj płynne przejście */
+  transition: transform 0.3s ease-in-out;
 }
 
 .img-fluid:hover {
-  transform: scale(1.05) translateY(-5px); /* Subtelne powiększenie i przesunięcie w górę */
+  transform: scale(1.05) translateY(-5px);
 }
-/* .project-image {
-  height: 200px;
-  width: 400px;
-} */
+
 .projects-container {
   display: flex;
   flex-wrap: wrap;

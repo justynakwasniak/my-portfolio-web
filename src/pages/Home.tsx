@@ -5,7 +5,6 @@ const Home = () => {
     <div>
       <div className="container">
         <div className="row align-items-center">
-          {/* Sekcja z tekstem po lewej stronie */}
           <div className="col-md-6 mt-5">
             <h1 className="mb-custom custom-heading text-center mb-5">
               <em>
@@ -24,17 +23,15 @@ const Home = () => {
             </p>
           </div>
 
-          {/* Sekcja z obrazem po prawej stronie */}
           <div className="col-md-6 mt-5">
             <img src={flowerImage} alt="Creative Work" className="img-fluid" />
           </div>
         </div>
       </div>
 
-      {/* Stopka */}
       <footer className="py-4 mt-5">
         <div className="container text-center">
-          <p className="mb-0">© 2024 Made by Justyna Kwaśniak with love </p>
+          <p className="mb-0">© 2024 Justyna Kwaśniak </p>
         </div>
       </footer>
     </div>

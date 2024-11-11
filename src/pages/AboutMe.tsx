@@ -1,11 +1,10 @@
 import cvFile from "../assets/Justyna_Resume_iteng.pdf";
-import profilePic from "../images/simple.avif";
+import ava from "../images/ava.jpg";
 
 const AboutMe = () => {
   return (
     <div className="container">
-      <div className="row align-items-center">
-        {/* Tekst */}
+      <div className="row">
         <div className="col-md-6">
           <h1 className="mb-3">
             <em>About Me</em>
@@ -47,13 +46,9 @@ const AboutMe = () => {
           </a>
         </div>
 
-        {/* Zdjęcie */}
-        <div className="col-md-6 text-center">
-          <img
-            src={profilePic}
-            alt="Justyna's Profile"
-            className="img-fluid "
-          />
+        {/* Obrazek wyśrodkowany i wyrównany do góry */}
+        <div className="col-md-6 text-center d-flex justify-content-center align-items-start">
+          <img src={ava} alt="Justyna's Profile" className="img-fluid" />
         </div>
       </div>
     </div>

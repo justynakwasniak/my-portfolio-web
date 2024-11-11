@@ -10,16 +10,16 @@ const Contact = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_8ks0mn6", // Podaj swoje Service ID
-          "template_34rzkff", // Podaj swoje Template ID
+          "service_8ks0mn6",
+          "template_34rzkff",
           form.current,
-          "-IUGxxQ6NYAB_Ezme" // Podaj swój User ID
+          "-IUGxxQ6NYAB_Ezme" 
         )
         .then(
           (result) => {
             console.log(result.text);
             alert("Message sent successfully!");
-            form.current?.reset(); // Resetowanie formularza po udanym wysłaniu
+            form.current?.reset(); 
           },
           (error) => {
             console.log(error.text);
