@@ -1,4 +1,4 @@
-import cvFile from "../assets/Justyna_Resume_iteng.pdf";
+import cvFile from "../assets/JustynaKwaśniakCV.pdf";
 import ava from "../images/ava.jpg";
 
 const AboutMe = () => {
