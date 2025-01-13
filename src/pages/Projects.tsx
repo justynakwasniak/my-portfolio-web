@@ -1,6 +1,7 @@
 import screen1 from "../images/logo bs.png";
 import screen2 from "../images/weather icon.png";
 import screen3 from "../images/imgeshop.png";
+import screen4 from "../images/memogame.png"
 
 const Projects = () => {
   return (
@@ -23,7 +24,7 @@ const Projects = () => {
             />
           </a>
           <div className="project-details">
-            <h2>Beauty Salon Website</h2>
+            <h2 className="text-center">Beauty Salon Website</h2>
             <p>A responsive website designed for a beauty salon.</p>
           </div>
         </div>
@@ -40,7 +41,7 @@ const Projects = () => {
             />
           </a>
           <div className="project-details">
-            <h2>Weather Application</h2>
+            <h2 className="text-center">Weather Application</h2>
             <p>
               An application providing real-time weather updates and forecasts.
             </p>
@@ -59,9 +60,28 @@ const Projects = () => {
             />
           </a>
           <div className="project-details">
-            <h2>E-commerce Application</h2>
+            <h2 className="text-center">E-commerce Application</h2>
             <p>
               An online store application where various products are available.
+            </p>
+          </div>
+        </div>
+        <div className="project-card">
+          <a
+            href="https://memo-game-rho.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={screen4}
+              alt="Memory game"
+              className="project-image"
+            />
+          </a>
+          <div className="project-details">
+            <h2 className="text-center">Memory game</h2>
+            <p>
+              Let's have some fun with a memory game !
             </p>
           </div>
         </div>
