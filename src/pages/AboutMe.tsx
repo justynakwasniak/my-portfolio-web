@@ -1,5 +1,5 @@
 import cvFile from "../assets/JustynaKwaśniakCV.pdf";
-import ava from "../images/ava.jpg";
+import ava from "../images/linked-in.jpg";
 
 const AboutMe = () => {
   return (
@@ -46,9 +46,8 @@ const AboutMe = () => {
           </a>
         </div>
 
-        {/* Obrazek wyśrodkowany i wyrównany do góry */}
         <div className="col-md-6 text-center d-flex justify-content-center align-items-start">
-          <img src={ava} alt="Justyna's Profile" className="img-fluid" />
+        <img src={ava} alt="Justyna's Profile" className="img-fluid" style={{ maxWidth: "80%" }} />
         </div>
       </div>
     </div>

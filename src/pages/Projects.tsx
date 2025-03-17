@@ -1,7 +1,7 @@
 import screen1 from "../images/logo bs.png";
 import screen2 from "../images/weather icon.png";
 import screen3 from "../images/imgeshop.png";
-import screen4 from "../images/memogame.png"
+import screen4 from "../images/Memory-Game-03-17-2025_04_14_PM.png"
 
 const Projects = () => {
   return (

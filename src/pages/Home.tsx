@@ -31,7 +31,7 @@ const Home = () => {
 
       <footer className="py-4 mt-5">
         <div className="container text-center">
-          <p className="mb-0">© 2024 Justyna Kwaśniak </p>
+          <p className="mb-0">© 2025 Justyna Kwaśniak </p>
         </div>
       </footer>
     </div>
