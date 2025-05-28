@@ -1,5 +1,5 @@
 import cvFile from "../assets/JustynaKwaśniakCV.pdf";
-import ava from "../images/linked-in.jpg";
+import ava from "../images/zdjp.jpg";
 
 const AboutMe = () => {
   return (

@@ -2,8 +2,8 @@ import flowerImage from "../images/photo-flower.avif";
 
 const Home = () => {
   return (
-    <div>
-      <div className="container">
+    <div className="d-flex flex-column min-vh-100">
+      <div className="container flex-grow-1">
         <div className="row align-items-center">
           <div className="col-md-6 mt-5">
             <h1 className="mb-custom custom-heading text-center mb-5">
@@ -29,9 +29,9 @@ const Home = () => {
         </div>
       </div>
 
-      <footer className="py-4 mt-5">
-        <div className="container text-center">
-          <p className="mb-0">© 2025 Justyna Kwaśniak </p>
+      <footer className="py-4 text-center">
+        <div className="container">
+          <p className="mb-0">© 2025 Justyna Kwaśniak</p>
         </div>
       </footer>
     </div>
