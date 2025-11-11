@@ -1,4 +1,6 @@
 import React from "react";
+import codegirl from "../images/codegirl.jpg";
+
 
 const Blog = () => {
   const posts = [
@@ -9,7 +11,7 @@ const Blog = () => {
       category: "Personal",
       readTime: "3 min read",
       excerpt:
-        "Starting my blog journey as a aspiring Front-End Developer. Here I'll share insights, lessons learned, and tips about web development, UX/UI design, and my path in tech.",
+        "Starting my blog journey as an aspiring Front-End Developer. Here I'll share insights, lessons learned, and tips about web development, UX/UI design, and my path in tech.",
       content: `I finally decided to start a blog section on my website. I’m not completely sure yet where it will go, but I thought it could be fun to share what I do, what I’m learning, or just something that I find interesting as a front-end developer.
 
 I’ve been learning front-end for about two years now through bootcamp, courses, mentoring program, and my own projects. It’s been, and still is, an exciting journey, but sometimes also a bit challenging, because the tech world changes fast and there’s always something new to discover.
@@ -17,7 +19,7 @@ I’ve been learning front-end for about two years now through bootcamp, courses
 I don’t want to force myself to post regularly or share daily updates. I want it to be relaxed, like a conversation with someone who is also interested in what I do. I’ll write about the projects I’m working on, what I’m learning, and what inspires me.
 
 So, welcome to my blog! Let’s see where this goes.`,
-      image: null,
+      image: codegirl,
     },
   ];
 
@@ -80,6 +82,14 @@ So, welcome to my blog! Let’s see where this goes.`,
                     <span>{selectedPost.readTime}</span>
                   </div>
                 </div>
+                {/* obrazek przed tekstem */}
+                {selectedPost.image && (
+                  <img
+                    src={selectedPost.image}
+                    alt={selectedPost.title + " image"}
+                    className="blog-post-image"
+                  />
+                )}
                 <div className="blog-post-content">
                   {selectedPost.content.split("\n\n").map((paragraph, idx) => (
                     <p key={idx}>{paragraph}</p>

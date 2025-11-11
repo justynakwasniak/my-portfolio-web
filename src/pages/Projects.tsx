@@ -26,8 +26,17 @@ const Projects = () => {
           <div className="project-details">
             <h2 className="text-center">Beauty Salon Website</h2>
             <p>A responsive website designed for a beauty salon.</p>
+            <a
+              className="project-github"
+              href="https://github.com/justynakwasniak/beauty-salon" /* <- zamień na swój repo */
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
           </div>
         </div>
+
         <div className="project-card">
           <a
             href="https://weather-app--ten.vercel.app/"
@@ -45,8 +54,17 @@ const Projects = () => {
             <p>
               An application providing real-time weather updates and forecasts.
             </p>
+            <a
+              className="project-github"
+              href="https://github.com/justynakwasniak/apka-pogodowa" /* <- zamień na swój repo */
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
           </div>
         </div>
+
         <div className="project-card">
           <a
             href="https://ecommerce3-dusky.vercel.app/"
@@ -64,8 +82,17 @@ const Projects = () => {
             <p>
               An online store application where various products are available.
             </p>
+            <a
+              className="project-github"
+              href="https://github.com/justynakwasniak/e-commerce" /* <- zamień na swój repo */
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
           </div>
         </div>
+
         <div className="project-card">
           <a
             href="https://memo-game-rho.vercel.app/"
@@ -83,6 +110,14 @@ const Projects = () => {
             <p>
               Let's have some fun with a memory game !
             </p>
+            <a
+              className="project-github"
+              href="https://github.com/justynakwasniak/memo-game" /* <- zamień na swój repo */
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
           </div>
         </div>
       </div>

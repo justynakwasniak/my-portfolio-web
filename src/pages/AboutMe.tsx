@@ -3,7 +3,7 @@ import ava from "../images/zdjp.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="container">
+    <div className="container about-me">
       <div className="row">
         <div className="col-md-6">
           <h1 className="mb-3">
