@@ -5,9 +5,9 @@ import screen4 from "../images/Memory-Game-03-17-2025_04_14_PM.png"
 
 const Projects = () => {
   return (
-    <div className="container mb-3">
+    <div className="container mb-3" style={{ paddingTop: "100px", paddingBottom: "100px" }}>
       <h1>
-        <em>My Projects</em>
+        My Projects
       </h1>
       <p>Here you can find a list of my projects.</p>
       <div className="projects-container">

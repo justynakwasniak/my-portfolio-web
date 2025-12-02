@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import { MdEmail } from "react-icons/md";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -32,11 +34,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container" style={{ paddingTop: "100px", paddingBottom: "100px" }}>
       <div className="row">
         <div className="col-md-6 mt-5">
           <h1 className="text-center">
-            <em>I look forward to hearing from you!</em>
+            I look forward to hearing from you!
           </h1>
           <p className="text-center mb-5">
             I’d love to hear from you! Whether you have questions about my work,
@@ -44,25 +46,36 @@ const Contact = () => {
             drop me a message. I’m always open to new opportunities and
             collaborations.
           </p>
-          <p>
+          <div className="contact-item">
             <strong>E-mail:&nbsp;&nbsp;</strong>
             <a href="mailto:jkwasniak193@gmail.com" className="email-link">
+              <MdEmail className="contact-icon" />
               jkwasniak193@gmail.com
             </a>
-          </p>
-          <p>
+          </div>
+          <div className="mt-3">
             <strong>On the Internet:</strong>
-          </p>
-          <a href="https://github.com/justynakwasniak" className="email-link">
-            Github
-          </a>{" "}
-          <br />
-          <a
-            href="https://www.linkedin.com/in/justyna-kwa%C5%9Bniak193/"
-            className="email-link"
-          >
-            LinkedIn
-          </a>
+          </div>
+          <div className="d-flex flex-column gap-2 mt-2">
+            <a 
+              href="https://github.com/justynakwasniak" 
+              className="email-link contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub className="contact-icon" />
+              Github
+            </a>
+            <a
+              href="https://www.linkedin.com/in/justyna-kwa%C5%9Bniak193/"
+              className="email-link contact-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin className="contact-icon" />
+              LinkedIn
+            </a>
+          </div>
         </div>
 
         <div className="col-md-6 mt-5">

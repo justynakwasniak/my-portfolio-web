@@ -1,40 +1,118 @@
 body {
-  background-color: #ece7e1;
-  color: #463f3a;
-  font-family: "Montserrat", sans-serif;
+  background-color: #f5f2ed;
+  color: #4a4238;
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
 }
 html {
   scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  scroll-margin-top: 80px;
 }
 
 .mb-custom {
   margin-bottom: 120px;
 }
 .btn-custom {
-  background-color: black;
-  color: white;
-  border-radius: 25px;
-  padding: 10px 20px;
-  border: none;
+  background-color: #4a4238;
+  color: #f5f2ed;
+  border: 2px solid #4a4238;
+  border-radius: 12px;
+  padding: 12px 30px;
   font-size: 16px;
-  transition: width 0.3s ease-in-out;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
   display: inline-block;
   cursor: pointer;
-  width: 150px;
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
   text-align: center;
 }
 
 .btn-custom:hover {
-  width: 180px;
+  background-color: #f5f2ed;
+  color: #4a4238;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 66, 56, 0.2);
+}
+
+.btn-home-light {
+  background-color: #f5f2ed;
+  color: #4a4238;
+  border: 2px solid #4a4238;
+  border-radius: 12px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
+}
+
+.btn-home-light:hover {
+  background-color: #4a4238;
+  color: #f5f2ed;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 66, 56, 0.2);
+}
+
+.btn-home-dark {
+  background-color: #4a4238;
+  color: #f5f2ed;
+  border: 2px solid #4a4238;
+  border-radius: 12px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
+}
+
+.btn-home-dark:hover {
+  background-color: #f5f2ed;
+  color: #4a4238;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 66, 56, 0.2);
 }
 .email-link {
-  color: black;
+  color: #4a4238;
   text-decoration: none;
-  transition: text-decoration 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.5;
 }
 
 .email-link:hover {
   text-decoration: underline;
+  color: #4a4238;
+}
+
+.contact-icon {
+  font-size: 1.6rem;
+  vertical-align: middle;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
 }
 .fade-enter {
   opacity: 0;
@@ -54,19 +132,19 @@ html {
   transition: opacity 300ms;
 }
 .navbar {
-  background: linear-gradient(90deg, #ece7e1, #e3d5ca);
+  background: linear-gradient(90deg, #f5f2ed, #e8e0d6);
 }
 
 .nav-link {
-  color: #463f3a;
+  color: #4a4238;
   padding: 10px 15px;
   border-radius: 20px;
   transition: background-color 0.3s ease;
 }
 
 .nav-link:hover {
-  background-color: #e3d5ca;
-  color: #463f3a;
+  background-color: #e8e0d6;
+  color: #4a4238;
 }
 .img-fluid {
   transition: transform 0.3s ease-in-out;
@@ -77,19 +155,22 @@ html {
 }
 
 .projects-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-card {
   background: #fff;
-  border-radius: 8px;
+  border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  width: 300px;
+  width: 100%;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-card:hover {
@@ -99,11 +180,16 @@ html {
 
 .project-image {
   width: 100%;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
+  display: block;
 }
 
 .project-details {
-  padding: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .project-details h2 {
@@ -113,7 +199,7 @@ html {
 
 .project-details p {
   font-size: 1rem;
-  color: #463f3a;
+  color: #4a4238;
   text-align: center;
 }
 .project-card img:hover {
@@ -126,21 +212,21 @@ html {
   border-radius: 20px;
 }
 footer {
-  background-color: #ece7e1;
+  background-color: #f5f2ed;
 }
 
 /* Zmienne pasujące do index.css */
 :root {
-  --bg-light: #ece7e1;
-  --bg-medium: #e3d5ca;
+  --bg-light: #f5f2ed;
+  --bg-medium: #e8e0d6;
   --card: #fff;
-  --text-dark: #463f3a;
+  --text-dark: #4a4238;
   --text-muted: #6b7280;
   --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .blog-root {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
   background-color: var(--bg-light);
   padding: 60px 0;
   min-height: 100vh;
@@ -163,15 +249,15 @@ footer {
 }
 
 .blog-header h1 em {
-  font-family: "Montserrat", sans-serif;
-  color: #463f3a;
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
+  color: #4a4238;
   font-style: normal;
   font-weight: 700;
 }
 
 .blog-subtitle {
   font-size: 1.05rem;
-  color: #463f3a;
+  color: #4a4238;
   font-weight: 00;
   line-height: 1.5;
 }
@@ -212,7 +298,7 @@ footer {
 
 .blog-category {
   display: inline-block;
-  background-color: #463f3a;
+  background-color: #4a4238;
   color: #fff;
   padding: 4px 12px;
   border-radius: 20px;
@@ -224,12 +310,12 @@ footer {
 
 .blog-read-time {
   font-size: 0.8rem;
-  color: #463f3a;
+  color: #4a4238;
   font-weight: 500;
 }
 
 .blog-card h2 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -238,7 +324,7 @@ footer {
 }
 
 .blog-excerpt {
-  color: #463f3a;
+  color: #4a4238;
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 16px;
@@ -249,12 +335,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   font-size: 0.85rem;
-  border-top: 1px solid #e3d5ca;
+  border-top: 1px solid #e8e0d6;
   padding-top: 12px;
 }
 
 .blog-date {
-  color: #463f3a;
+  color: #4a4238;
   font-weight: 500;
 }
 
@@ -276,7 +362,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(70, 63, 58, 0.5);
+  background: rgba(74, 66, 56, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -305,16 +391,16 @@ footer {
 }
 
 .blog-modal::-webkit-scrollbar-track {
-  background: #ece7e1;
+  background: #f5f2ed;
 }
 
 .blog-modal::-webkit-scrollbar-thumb {
-  background: #463f3a;
+  background: #4a4238;
   border-radius: 3px;
 }
 
 .blog-modal::-webkit-scrollbar-thumb:hover {
-  background: #2d2420;
+  background: #3a332a;
 }
 
 /* Close button */
@@ -325,7 +411,7 @@ footer {
   background: transparent;
   border: none;
   font-size: 1.5rem;
-  color: #463f3a;
+  color: #4a4238;
   cursor: pointer;
   transition: transform 0.2s ease-in-out;
   width: 32px;
@@ -341,12 +427,12 @@ footer {
 
 /* ========== FULL POST ========== */
 .blog-full-post {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
 }
 
 .blog-post-header {
   margin-bottom: 28px;
-  border-bottom: 1px solid #e3d5ca;
+  border-bottom: 1px solid #e8e0d6;
   padding-bottom: 20px;
 }
 
@@ -356,7 +442,7 @@ footer {
 }
 
 .blog-post-header h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
   font-size: 1.85rem;
   font-weight: 700;
   margin-bottom: 10px;
@@ -368,7 +454,7 @@ footer {
   display: flex;
   gap: 8px;
   font-size: 0.9rem;
-  color: #463f3a;
+  color: #4a4238;
   font-weight: 500;
 }
 
@@ -376,7 +462,7 @@ footer {
 .blog-post-content {
   font-size: 0.95rem;
   line-height: 1.8;
-  color: #463f3a;
+  color: #4a4238;
 }
 
 .blog-post-content p {
@@ -384,12 +470,12 @@ footer {
 }
 
 .blog-post-content strong {
-  color: #463f3a;
+  color: #4a4238;
   font-weight: 600;
 }
 
 .blog-post-content em {
-  color: #463f3a;
+  color: #4a4238;
   font-style: italic;
 }
 
@@ -476,26 +562,26 @@ footer {
 /* GitHub button styling - wygląd jak View My CV / Send */
 .project-github {
   display: inline-block;
-  background-color: #000;
-  color: #fff;
-  border-radius: 25px;
-  padding: 10px 20px;
+  background-color: #4a4238;
+  color: #f5f2ed;
+  border: 2px solid #4a4238;
+  border-radius: 12px;
+  padding: 12px 30px;
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
-  transition: width 0.3s ease-in-out, transform 0.15s ease, box-shadow 0.15s ease;
-  width: 150px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
   text-align: center;
   margin: 12px auto 0;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  font-family: "Geist", system-ui, -apple-system, sans-serif;
 }
 
 .project-github:hover {
-  width: 180px;
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(0,0,0,0.14);
+  background-color: #f5f2ed;
+  color: #4a4238;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(74, 66, 56, 0.2);
   text-decoration: none;
-  color: #fff;
 }
 
 /* Upewnij się, że link jest wycentrowany w karcie projektu */
@@ -505,12 +591,28 @@ footer {
   align-items: center;
 }
 
+/* Responsywność dla projektów */
+@media (max-width: 768px) {
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
 /* Dostosowanie dla małych ekranów */
 @media (max-width: 480px) {
   .project-github {
-    width: 140px;
+    padding: 10px 20px;
+    font-size: 14px;
   }
-  .project-github:hover { width: 160px; }
+  
+  .project-card {
+    border-radius: 8px;
+  }
+  
+  .project-details {
+    padding: 15px;
+  }
 }
 
 .blog-post-image {

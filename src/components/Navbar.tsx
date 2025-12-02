@@ -1,13 +1,17 @@
-import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const Navbar = () => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          Home
-        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -20,26 +24,42 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <a 
+                className="nav-link" 
+                href="#home"
+                onClick={(e) => handleNavClick(e, "home")}
+              >
+                Home
+              </a>
+            </li>
+            <li className="nav-item">
+              <a 
+                className="nav-link" 
+                href="#about"
+                onClick={(e) => handleNavClick(e, "about")}
+              >
                 About Me
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/projects">
+              <a 
+                className="nav-link" 
+                href="#projects"
+                onClick={(e) => handleNavClick(e, "projects")}
+              >
                 Explore My Projects
-              </Link>
+              </a>
             </li>
-            {/* <li className="nav-item">
-              <Link className="nav-link" to="/blog">
-                Blog
-              </Link>
-            </li> */}
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <a 
+                className="nav-link" 
+                href="#contact"
+                onClick={(e) => handleNavClick(e, "contact")}
+              >
                 Contact Me
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

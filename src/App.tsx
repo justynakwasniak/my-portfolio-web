@@ -1,24 +1,31 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-// import Blog from "./pages/Blog";
 
 function App() {
   return (
-    <Router>
+    <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />
-                {/* <Route path="/blog" element={<Blog />} /> */}
-
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
+      <section id="home">
+        <Home />
+      </section>
+      <section id="about">
+        <AboutMe />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
+      <footer className="py-4 text-center">
+        <div className="container">
+          <p className="mb-0">© 2025 Justyna Kwaśniak</p>
+        </div>
+      </footer>
+    </div>
   );
 }
 
