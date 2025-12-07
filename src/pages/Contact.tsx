@@ -1,43 +1,54 @@
-import React, { useRef } from "react";
-import emailjs from "emailjs-com";
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 import { MdEmail } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
+  const [isSending, setIsSending] = useState(false);
+  const [sendStatus, setSendStatus] = useState<"idle" | "success" | "error">("idle");
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    if (form.current) {
-      emailjs
-        .sendForm(
-          "service_8ks0mn6",
-          "template_34rzkff",
-          form.current,
-          "-IUGxxQ6NYAB_Ezme" 
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            alert("Message sent successfully!");
-            form.current?.reset(); 
-          },
-          (error) => {
-            console.log(error.text);
-            alert("Failed to send the message, please try again.");
-          }
-        );
-    } else {
+    if (!form.current) {
+      setSendStatus("error");
       alert("Form not found!");
+      return;
     }
+
+    setIsSending(true);
+    setSendStatus("idle");
+
+    emailjs
+      .sendForm(
+        "service_8ks0mn6",
+        "template_34rzkff",
+        form.current,
+        "-IUGxxQ6NYAB_Ezme"
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS!", result.status, result.text);
+          setSendStatus("success");
+          alert("Message sent successfully!");
+          form.current?.reset();
+          setIsSending(false);
+        },
+        (error) => {
+          console.error("FAILED...", error);
+          setSendStatus("error");
+          alert(`Failed to send the message. Error: ${error.text || "Unknown error"}`);
+          setIsSending(false);
+        }
+      );
   };
 
   return (
     <div className="container" style={{ paddingTop: "100px", paddingBottom: "100px" }}>
       <div className="row">
         <div className="col-md-6 mt-5">
-          <h1 className="text-center">
+          <h1 className="text-left section-title">
             I look forward to hearing from you!
           </h1>
           <p className="text-center mb-5">
@@ -119,9 +130,19 @@ const Contact = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" className="btn-custom">
-              Send
+            <button 
+              type="submit" 
+              className="btn-custom"
+              disabled={isSending}
+            >
+              {isSending ? "Sending..." : "Send"}
             </button>
+            {sendStatus === "success" && (
+              <p className="text-success mt-2">Message sent successfully!</p>
+            )}
+            {sendStatus === "error" && (
+              <p className="text-danger mt-2">Failed to send message. Please try again.</p>
+            )}
           </form>
         </div>
       </div>
