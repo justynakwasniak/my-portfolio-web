@@ -1,5 +1,5 @@
-import screen1 from "../images/logo bs.png";
-import screen2 from "../images/weather icon.png";
+import screen1 from "../images/beauty.png";
+import screen2 from "../images/weatherwise.png";
 import screen3 from "../images/imgeshop.png";
 import screen4 from "../images/Memory-Game-03-17-2025_04_14_PM.png"
 
@@ -9,7 +9,6 @@ const Projects = () => {
       <h1 className="section-title">
         My Projects
       </h1>
-      <p>Here you can find a list of my projects.</p>
       <div className="projects-container">
         <div className="project-card">
           <a
@@ -28,7 +27,7 @@ const Projects = () => {
             <p>A responsive website designed for a beauty salon.</p>
             <a
               className="project-github"
-              href="https://github.com/justynakwasniak/beauty-salon" /* <- zamień na swój repo */
+              href="https://github.com/justynakwasniak/beauty-salon"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -56,7 +55,7 @@ const Projects = () => {
             </p>
             <a
               className="project-github"
-              href="https://github.com/justynakwasniak/apka-pogodowa" /* <- zamień na swój repo */
+              href="https://github.com/justynakwasniak/apka-pogodowa"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -84,7 +83,7 @@ const Projects = () => {
             </p>
             <a
               className="project-github"
-              href="https://github.com/justynakwasniak/e-commerce" /* <- zamień na swój repo */
+              href="https://github.com/justynakwasniak/e-commerce"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -112,7 +111,7 @@ const Projects = () => {
             </p>
             <a
               className="project-github"
-              href="https://github.com/justynakwasniak/memo-game" /* <- zamień na swój repo */
+              href="https://github.com/justynakwasniak/memo-game"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -51,7 +51,7 @@ const Contact = () => {
           <h1 className="text-left section-title">
             I look forward to hearing from you!
           </h1>
-          <p className="text-center mb-5">
+          <p className="text-left mb-5">
             I’d love to hear from you! Whether you have questions about my work,
             want to discuss a project, or just want to connect, feel free to
             drop me a message. I’m always open to new opportunities and
