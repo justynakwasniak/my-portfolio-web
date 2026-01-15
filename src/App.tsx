@@ -22,7 +22,7 @@ function App() {
       </section>
       <footer className="py-4 text-center">
         <div className="container">
-          <p className="mb-0">© 20c Justyna Kwaśniak</p>
+          <p className="mb-0">© 2026 Justyna Kwaśniak</p>
         </div>
       </footer>
     </div>
