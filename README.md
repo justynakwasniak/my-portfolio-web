@@ -4,7 +4,7 @@ Welcome to my personal portfolio website! This is a single-page application show
 
 ## 🌐 Live Demo
 
-Visit the live website: [https://justynakwasniak.github.io/my-portfolio-web](https://justynakwasniak.github.io/my-portfolio-web)
+Visit the live website: https://justynakwasniak.pl/
 
 ## ✨ Features
 
