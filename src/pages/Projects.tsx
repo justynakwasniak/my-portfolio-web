@@ -33,6 +33,12 @@ const Projects = () => {
             >
               View on GitHub
             </a>
+            {/* Tech Badges */}
+            <div style={{marginTop: "12px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
+              <span className="tech-badge">React</span>
+              <span className="tech-badge">TypeScript</span>
+              <span className="tech-badge">Bootstrap</span>
+            </div>
           </div>
         </div>
 
@@ -61,6 +67,12 @@ const Projects = () => {
             >
               View on GitHub
             </a>
+            {/* Tech Badges */}
+            <div style={{marginTop: "12px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
+              <span className="tech-badge">React</span>
+              <span className="tech-badge">TypeScript</span>
+              <span className="tech-badge">Bootstrap</span>
+            </div>
           </div>
         </div>
 
@@ -89,6 +101,12 @@ const Projects = () => {
             >
               View on GitHub
             </a>
+            {/* Tech Badges */}
+            <div style={{marginTop: "12px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
+              <span className="tech-badge">React</span>
+              <span className="tech-badge">TypeScript</span>
+              <span className="tech-badge">Bootstrap</span>
+            </div>
           </div>
         </div>
 
@@ -117,6 +135,10 @@ const Projects = () => {
             >
               View on GitHub
             </a>
+            {/* Tech Badges */}
+            <div style={{marginTop: "12px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
+              <span className="tech-badge">JavaScript</span>
+            </div>
           </div>
         </div>
       </div>
