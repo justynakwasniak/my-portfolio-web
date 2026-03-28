@@ -3,7 +3,7 @@ import ava from "../images/zdjp.jpg";
 
 const AboutMe = () => {
   return (
-    <div className="container about-me" style={{ paddingTop: "100px", paddingBottom: "100px" }}>
+    <div className="container about-me" style={{ paddingTop: "50px", paddingBottom: "100px" }}>
       <div className="row">
         <div className="col-md-6">
           <h1 className="mb-3 section-title">

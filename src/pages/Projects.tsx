@@ -6,7 +6,7 @@ import screen4 from "../images/Memory-Game-03-17-2025_04_14_PM.png"
 const Projects = () => {
   return (
     <div className="container mb-3" style={{ paddingTop: "100px", paddingBottom: "100px" }}>
-      <h1 className="section-title">
+      <h1 className="section-title section-title--centered">
         My Projects
       </h1>
       <div className="projects-container">
@@ -34,7 +34,7 @@ const Projects = () => {
               View on GitHub
             </a>
             {/* Tech Badges */}
-            <div style={{marginTop: "12px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
+            <div style={{marginTop: "24px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
               <span className="tech-badge">React</span>
               <span className="tech-badge">TypeScript</span>
               <span className="tech-badge">Bootstrap</span>
@@ -57,7 +57,7 @@ const Projects = () => {
           <div className="project-details">
             <h2 className="text-center">Weather Application</h2>
             <p>
-              An application providing real-time weather updates and forecasts.
+              An application providing real-time weather and forecasts.
             </p>
             <a
               className="project-github"
@@ -68,7 +68,7 @@ const Projects = () => {
               View on GitHub
             </a>
             {/* Tech Badges */}
-            <div style={{marginTop: "12px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
+            <div style={{marginTop: "24px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
               <span className="tech-badge">React</span>
               <span className="tech-badge">TypeScript</span>
               <span className="tech-badge">Bootstrap</span>
@@ -102,7 +102,7 @@ const Projects = () => {
               View on GitHub
             </a>
             {/* Tech Badges */}
-            <div style={{marginTop: "12px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
+            <div style={{marginTop: "24px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
               <span className="tech-badge">React</span>
               <span className="tech-badge">TypeScript</span>
               <span className="tech-badge">Bootstrap</span>
@@ -136,7 +136,7 @@ const Projects = () => {
               View on GitHub
             </a>
             {/* Tech Badges */}
-            <div style={{marginTop: "12px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
+            <div style={{marginTop: "24px", marginBottom: "0", display: "flex", gap: "8px", justifyContent: "center"}}>
               <span className="tech-badge">JavaScript</span>
             </div>
           </div>

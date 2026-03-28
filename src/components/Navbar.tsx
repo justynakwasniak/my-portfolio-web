@@ -10,8 +10,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ height: '70px' }}>
+      <div className="container-fluid d-flex align-items-center">
         <button
           className="navbar-toggler"
           type="button"
@@ -27,7 +27,7 @@ const Navbar = () => {
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <a 
-                className="nav-link" 
+                className="nav-link me-4" 
                 href="#home"
                 onClick={(e) => handleNavClick(e, "home")}
               >
@@ -36,7 +36,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a 
-                className="nav-link" 
+                className="nav-link me-4" 
                 href="#about"
                 onClick={(e) => handleNavClick(e, "about")}
               >
@@ -45,7 +45,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item">
               <a 
-                className="nav-link" 
+                className="nav-link me-4" 
                 href="#projects"
                 onClick={(e) => handleNavClick(e, "projects")}
               >
