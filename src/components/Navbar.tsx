@@ -10,8 +10,21 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top" style={{ height: '70px' }}>
-      <div className="container-fluid d-flex align-items-center">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top portfolio-navbar">
+      <div className="container-fluid d-flex flex-wrap align-items-center">
+        <a
+          className="navbar-brand d-flex align-items-center py-0 me-2"
+          href="#home"
+          onClick={(e) => handleNavClick(e, "home")}
+        >
+          <img
+            src="/jk.svg"
+            alt="Justyna Kwasniak"
+            className="navbar-logo"
+            width={44}
+            height={44}
+          />
+        </a>
         <button
           className="navbar-toggler"
           type="button"
